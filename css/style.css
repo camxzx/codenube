@@ -1,0 +1,78 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de los formularios */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #4cae4c; /* Verde más oscuro */
+}
+
+/* Mensajes de error o éxito */
+#loginMessage, #registerMessage {
+    text-align: center;
+    color: #d9534f; /* Color rojo para mensajes de error */
+    margin-top: 15px;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilo del botón para cambiar entre formularios */
+#showRegisterForm, #showLoginForm {
+    background: none;
+    border: none;
+    color: #007bff; /* Color azul */
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+#showRegisterForm:hover, #showLoginForm:hover {
+    text-decoration: none; /* Quitar subrayado al pasar el mouse */
+}

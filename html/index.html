@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <button id="loginButton" onclick="window.location.href='login.html'">Cerrar Sesion</button>
+    <h1>Lista de Items</h1>
+    <button id="addItemButton">Agregar Item</button>
+    <table id="itemsTable">
+        <thead>
+            <tr>
+                <th>ItemID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los items se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+
+    <!-- Modal para agregar o editar un item -->
+    <div id="itemModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Agregar Item</h2>
+            <form id="itemForm">
+                <input type="hidden" id="itemId">
+                <div>
+                    <label for="itemNombre">Nombre:</label>
+                    <input type="text" id="itemNombre" required>
+                </div>
+                <div>
+                    <label for="itemDescripcion">Descripción:</label>
+                    <input type="text" id="itemDescripcion" required>
+                </div>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/scripts/items.js"></script>
+</body>
+</html>

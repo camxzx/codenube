@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registro</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Asegúrate de tener un archivo CSS si deseas estilos -->
+</head>
+<body>
+    <div class="form-container">
+        <!-- Contenedor de inicio de sesión -->
+        <div id="loginContainer">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="loginCorreo">Correo Electrónico:</label>
+ <input type="email" id="loginCorreo" name="email" required>
+                </div>
+                <div>
+                    <label for="loginPassword">Contraseña:</label>
+                    <input type="password" id="loginPassword" name="contrasena" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <button id="showRegisterForm">¿No tienes una cuenta? Regístrate aquí</button>
+            <div id="loginMessage"></div>
+        </div>
+
+        <!-- Contenedor de registro -->
+        <div id="registerContainer" class="hidden">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <div>
+                    <label for="registerNombre">Nombre:</label>
+                    <input type="text" id="registerNombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="registerCorreo">Correo Electrónico:</label>
+                    <input type="email" id="registerCorreo" name="email" required>
+                </div>
+                <div>
+                    <label for="registerPassword">Contraseña:</label>
+                    <input type="password" id="registerPassword" name="contrasena" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+            <button id="showLoginForm">¿Ya tienes una cuenta? Inicia sesión aquí</button>
+            <div id="registerMessage"></div>
+        </div>
+    </div>
+
+    <!-- Referencia al archivo de script externo -->
+    <script src="/scripts/login.js"></script>
+</body>
+</html>
